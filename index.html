@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahmudul Hasan — Vector Icon Sets & Illustrations</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#141414;color:#e8e8e8;line-height:1.6}
+.hero{background:linear-gradient(135deg,#1a2b2b 0%,#141414 60%);padding:64px 24px;text-align:center;border-bottom:3px solid #14b8a6}
+.hero h1{font-size:2.4rem;color:#fff;letter-spacing:.5px}
+.hero h1 span{color:#14b8a6}
+.hero p{color:#9db8b5;max-width:640px;margin:14px auto 0;font-size:1.02rem}
+.stats{display:flex;gap:28px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.stat b{display:block;font-size:1.6rem;color:#14b8a6}
+.stat small{color:#8a9a98}
+.filters{position:sticky;top:0;z-index:5;background:rgba(20,20,20,.96);padding:14px 12px;text-align:center;border-bottom:1px solid #2a2a2a;backdrop-filter:blur(6px)}
+.pill{background:#222;border:1px solid #333;color:#cfcfcf;border-radius:999px;padding:8px 18px;margin:4px;cursor:pointer;font-size:.9rem;transition:.2s}
+.pill:hover{border-color:#14b8a6;color:#fff}
+.pill.active{background:#14b8a6;border-color:#14b8a6;color:#0c1514;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:22px;padding:30px 22px;max-width:1280px;margin:0 auto}
+.card{background:#1e1e1e;border-radius:14px;overflow:hidden;border:1px solid #2c2c2c;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(20,184,166,.16);border-color:#14b8a6}
+.card img{width:100%;height:210px;object-fit:cover;cursor:zoom-in;display:block}
+.card-body{padding:14px 16px}
+.card-body h3{font-size:1rem;color:#fff;font-weight:600}
+.tag{display:inline-block;margin-top:8px;font-size:.75rem;color:#14b8a6;background:rgba(20,184,166,.1);border:1px solid rgba(20,184,166,.35);padding:3px 12px;border-radius:999px}
+footer{text-align:center;padding:36px 20px;color:#777;font-size:.88rem;border-top:1px solid #2a2a2a}
+footer a{color:#14b8a6;text-decoration:none}
+#lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:50;align-items:center;justify-content:center;flex-direction:column;padding:20px}
+#lb.show{display:flex}
+#lb img{max-width:92vw;max-height:82vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#lb p{margin-top:14px;color:#ddd;font-size:1.05rem}
+#lb span{position:absolute;top:18px;right:26px;font-size:2rem;color:#aaa;cursor:pointer}
+#lb span:hover{color:#fff}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>Mahmudul Hasan <span>— Vector Portfolio</span></h1>
+  <p>Flat vector icon sets & illustrations for modern product, fintech and AI teams — clean geometry, consistent style, delivered as EPS vectors. All artworks are AI-generated vector illustrations.</p>
+  <div class="stats">
+    <div class="stat"><b>49</b><small>icon sets</small></div>
+    <div class="stat"><b>11</b><small>illustrations</small></div>
+    <div class="stat"><b>6</b><small>categories</small></div>
+  </div>
+</div>
+<div class="filters"><button class="pill active" onclick="filterCat('all',this)">All</button><button class="pill" onclick="filterCat('AI & Technology',this)">AI & Technology</button><button class="pill" onclick="filterCat('Fintech',this)">Fintech</button><button class="pill" onclick="filterCat('Business',this)">Business</button><button class="pill" onclick="filterCat('Lifestyle',this)">Lifestyle</button><button class="pill" onclick="filterCat('Seasonal',this)">Seasonal</button><button class="pill" onclick="filterCat('Illustrations',this)">Illustrations</button></div>
+<div class="grid" id="grid">
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/ai-workflow-sheet-v1.jpg" alt="Core AI Workflow Icons" loading="lazy" onclick="openLB('images/all/ai-workflow-sheet-v1.jpg','Core AI Workflow Icons')">
+      <div class="card-body"><h3>Core AI Workflow Icons</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/ai-workflow-sheet-v2.jpg" alt="Prompt Chaining & Copilots" loading="lazy" onclick="openLB('images/all/ai-workflow-sheet-v2.jpg','Prompt Chaining & Copilots')">
+      <div class="card-body"><h3>Prompt Chaining & Copilots</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/ai-workflow-sheet-v3.jpg" alt="MLOps & Model Deployment" loading="lazy" onclick="openLB('images/all/ai-workflow-sheet-v3.jpg','MLOps & Model Deployment')">
+      <div class="card-body"><h3>MLOps & Model Deployment</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/ai-workflow-sheet-v4.jpg" alt="Evaluation & AI Safety" loading="lazy" onclick="openLB('images/all/ai-workflow-sheet-v4.jpg','Evaluation & AI Safety')">
+      <div class="card-body"><h3>Evaluation & AI Safety</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/ai-workflow-sheet-v5.jpg" alt="AI Agents & Optimization" loading="lazy" onclick="openLB('images/all/ai-workflow-sheet-v5.jpg','AI Agents & Optimization')">
+      <div class="card-body"><h3>AI Agents & Optimization</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/ai-prompt-sheet-v1.jpg" alt="AI Prompt Essentials" loading="lazy" onclick="openLB('images/all/ai-prompt-sheet-v1.jpg','AI Prompt Essentials')">
+      <div class="card-body"><h3>AI Prompt Essentials</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/rag-sheet-v1.jpg" alt="RAG Pipeline Icons" loading="lazy" onclick="openLB('images/all/rag-sheet-v1.jpg','RAG Pipeline Icons')">
+      <div class="card-body"><h3>RAG Pipeline Icons</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/cybersecurity-sheet-v1.jpg" alt="Cybersecurity Icons" loading="lazy" onclick="openLB('images/all/cybersecurity-sheet-v1.jpg','Cybersecurity Icons')">
+      <div class="card-body"><h3>Cybersecurity Icons</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/cloud-sheet-v1.jpg" alt="Cloud Computing Icons" loading="lazy" onclick="openLB('images/all/cloud-sheet-v1.jpg','Cloud Computing Icons')">
+      <div class="card-body"><h3>Cloud Computing Icons</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/seed-phrase-sheet-v1.jpg" alt="Crypto Security Icons" loading="lazy" onclick="openLB('images/all/seed-phrase-sheet-v1.jpg','Crypto Security Icons')">
+      <div class="card-body"><h3>Crypto Security Icons</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/passkeys-sheet-v1.jpg" alt="Passkeys & Authentication" loading="lazy" onclick="openLB('images/all/passkeys-sheet-v1.jpg','Passkeys & Authentication')">
+      <div class="card-body"><h3>Passkeys & Authentication</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="AI & Technology">
+      <img src="images/all/analytics-sheet-v1.jpg" alt="Data Analytics Icons" loading="lazy" onclick="openLB('images/all/analytics-sheet-v1.jpg','Data Analytics Icons')">
+      <div class="card-body"><h3>Data Analytics Icons</h3><span class="tag">AI & Technology</span></div>
+    </div>
+<div class="card" data-cat="Fintech">
+      <img src="images/all/fintech-sheet-v1.jpg" alt="Payments Icons" loading="lazy" onclick="openLB('images/all/fintech-sheet-v1.jpg','Payments Icons')">
+      <div class="card-body"><h3>Payments Icons</h3><span class="tag">Fintech</span></div>
+    </div>
+<div class="card" data-cat="Fintech">
+      <img src="images/all/fintech-sheet-v2.jpg" alt="Banking Icons" loading="lazy" onclick="openLB('images/all/fintech-sheet-v2.jpg','Banking Icons')">
+      <div class="card-body"><h3>Banking Icons</h3><span class="tag">Fintech</span></div>
+    </div>
+<div class="card" data-cat="Fintech">
+      <img src="images/all/fintech-sheet-v3.jpg" alt="Trading Icons" loading="lazy" onclick="openLB('images/all/fintech-sheet-v3.jpg','Trading Icons')">
+      <div class="card-body"><h3>Trading Icons</h3><span class="tag">Fintech</span></div>
+    </div>
+<div class="card" data-cat="Fintech">
+      <img src="images/all/fintech-sheet-v4.jpg" alt="Crypto & DeFi Icons" loading="lazy" onclick="openLB('images/all/fintech-sheet-v4.jpg','Crypto & DeFi Icons')">
+      <div class="card-body"><h3>Crypto & DeFi Icons</h3><span class="tag">Fintech</span></div>
+    </div>
+<div class="card" data-cat="Fintech">
+      <img src="images/all/fintech-sheet-v5.jpg" alt="Insurance & Compliance" loading="lazy" onclick="openLB('images/all/fintech-sheet-v5.jpg','Insurance & Compliance')">
+      <div class="card-body"><h3>Insurance & Compliance</h3><span class="tag">Fintech</span></div>
+    </div>
+<div class="card" data-cat="Fintech">
+      <img src="images/all/finance-payment-sheet-v1.jpg" alt="Finance & Payments" loading="lazy" onclick="openLB('images/all/finance-payment-sheet-v1.jpg','Finance & Payments')">
+      <div class="card-body"><h3>Finance & Payments</h3><span class="tag">Fintech</span></div>
+    </div>
+<div class="card" data-cat="Fintech">
+      <img src="images/all/islamic-fintech-sheet-v1.jpg" alt="Islamic Fintech Icons" loading="lazy" onclick="openLB('images/all/islamic-fintech-sheet-v1.jpg','Islamic Fintech Icons')">
+      <div class="card-body"><h3>Islamic Fintech Icons</h3><span class="tag">Fintech</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/marketing-sheet-v1.jpg" alt="Marketing Icons" loading="lazy" onclick="openLB('images/all/marketing-sheet-v1.jpg','Marketing Icons')">
+      <div class="card-body"><h3>Marketing Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/ecommerce-sheet-v1.jpg" alt="E-commerce Icons" loading="lazy" onclick="openLB('images/all/ecommerce-sheet-v1.jpg','E-commerce Icons')">
+      <div class="card-body"><h3>E-commerce Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/hr-career-sheet-v1.jpg" alt="HR & Careers Icons" loading="lazy" onclick="openLB('images/all/hr-career-sheet-v1.jpg','HR & Careers Icons')">
+      <div class="card-body"><h3>HR & Careers Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/startup-sheet-v1.jpg" alt="Startup Icons" loading="lazy" onclick="openLB('images/all/startup-sheet-v1.jpg','Startup Icons')">
+      <div class="card-body"><h3>Startup Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/logistics-sheet-v1.jpg" alt="Logistics Icons" loading="lazy" onclick="openLB('images/all/logistics-sheet-v1.jpg','Logistics Icons')">
+      <div class="card-body"><h3>Logistics Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/real-estate-sheet-v1.jpg" alt="Real Estate Icons" loading="lazy" onclick="openLB('images/all/real-estate-sheet-v1.jpg','Real Estate Icons')">
+      <div class="card-body"><h3>Real Estate Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/teamwork-sheet-v1.jpg" alt="Teamwork Icons" loading="lazy" onclick="openLB('images/all/teamwork-sheet-v1.jpg','Teamwork Icons')">
+      <div class="card-body"><h3>Teamwork Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/remotework-sheet-v1.jpg" alt="Remote Work Icons" loading="lazy" onclick="openLB('images/all/remotework-sheet-v1.jpg','Remote Work Icons')">
+      <div class="card-body"><h3>Remote Work Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/education-sheet-v1.jpg" alt="Education Icons" loading="lazy" onclick="openLB('images/all/education-sheet-v1.jpg','Education Icons')">
+      <div class="card-body"><h3>Education Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/elearning-sheet-v1.jpg" alt="E-learning Icons" loading="lazy" onclick="openLB('images/all/elearning-sheet-v1.jpg','E-learning Icons')">
+      <div class="card-body"><h3>E-learning Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/productivity-sheet-v1.jpg" alt="Productivity Icons" loading="lazy" onclick="openLB('images/all/productivity-sheet-v1.jpg','Productivity Icons')">
+      <div class="card-body"><h3>Productivity Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/support-sheet-v1.jpg" alt="Customer Support Icons" loading="lazy" onclick="openLB('images/all/support-sheet-v1.jpg','Customer Support Icons')">
+      <div class="card-body"><h3>Customer Support Icons</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/esg-sheet-v1.jpg" alt="ESG & Sustainability" loading="lazy" onclick="openLB('images/all/esg-sheet-v1.jpg','ESG & Sustainability')">
+      <div class="card-body"><h3>ESG & Sustainability</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Business">
+      <img src="images/all/sale-badges-sheet-v1.jpg" alt="Sale Badges" loading="lazy" onclick="openLB('images/all/sale-badges-sheet-v1.jpg','Sale Badges')">
+      <div class="card-body"><h3>Sale Badges</h3><span class="tag">Business</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/coffee-sheet-v1.jpg" alt="Coffee Icons" loading="lazy" onclick="openLB('images/all/coffee-sheet-v1.jpg','Coffee Icons')">
+      <div class="card-body"><h3>Coffee Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/food-sheet-v1.jpg" alt="Food Icons" loading="lazy" onclick="openLB('images/all/food-sheet-v1.jpg','Food Icons')">
+      <div class="card-body"><h3>Food Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/pets-sheet-v1.jpg" alt="Pets Icons" loading="lazy" onclick="openLB('images/all/pets-sheet-v1.jpg','Pets Icons')">
+      <div class="card-body"><h3>Pets Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/sports-sheet-v1.jpg" alt="Sports Icons" loading="lazy" onclick="openLB('images/all/sports-sheet-v1.jpg','Sports Icons')">
+      <div class="card-body"><h3>Sports Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/music-sheet-v1.jpg" alt="Music Icons" loading="lazy" onclick="openLB('images/all/music-sheet-v1.jpg','Music Icons')">
+      <div class="card-body"><h3>Music Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/photography-sheet-v1.jpg" alt="Photography Icons" loading="lazy" onclick="openLB('images/all/photography-sheet-v1.jpg','Photography Icons')">
+      <div class="card-body"><h3>Photography Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/travel-sheet-v1.jpg" alt="Travel Icons" loading="lazy" onclick="openLB('images/all/travel-sheet-v1.jpg','Travel Icons')">
+      <div class="card-body"><h3>Travel Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/gardening-sheet-v1.jpg" alt="Gardening Icons" loading="lazy" onclick="openLB('images/all/gardening-sheet-v1.jpg','Gardening Icons')">
+      <div class="card-body"><h3>Gardening Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/automotive-sheet-v1.jpg" alt="Automotive Icons" loading="lazy" onclick="openLB('images/all/automotive-sheet-v1.jpg','Automotive Icons')">
+      <div class="card-body"><h3>Automotive Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/healthcare-sheet-v1.jpg" alt="Healthcare Icons" loading="lazy" onclick="openLB('images/all/healthcare-sheet-v1.jpg','Healthcare Icons')">
+      <div class="card-body"><h3>Healthcare Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Lifestyle">
+      <img src="images/all/wellness-sheet-v1.jpg" alt="Wellness Icons" loading="lazy" onclick="openLB('images/all/wellness-sheet-v1.jpg','Wellness Icons')">
+      <div class="card-body"><h3>Wellness Icons</h3><span class="tag">Lifestyle</span></div>
+    </div>
+<div class="card" data-cat="Seasonal">
+      <img src="images/all/christmas-sheet-v1.jpg" alt="Christmas Icons" loading="lazy" onclick="openLB('images/all/christmas-sheet-v1.jpg','Christmas Icons')">
+      <div class="card-body"><h3>Christmas Icons</h3><span class="tag">Seasonal</span></div>
+    </div>
+<div class="card" data-cat="Seasonal">
+      <img src="images/all/halloween-sheet-v1.jpg" alt="Halloween Icons Vol.1" loading="lazy" onclick="openLB('images/all/halloween-sheet-v1.jpg','Halloween Icons Vol.1')">
+      <div class="card-body"><h3>Halloween Icons Vol.1</h3><span class="tag">Seasonal</span></div>
+    </div>
+<div class="card" data-cat="Seasonal">
+      <img src="images/all/halloween-sheet-v2.jpg" alt="Halloween Icons Vol.2" loading="lazy" onclick="openLB('images/all/halloween-sheet-v2.jpg','Halloween Icons Vol.2')">
+      <div class="card-body"><h3>Halloween Icons Vol.2</h3><span class="tag">Seasonal</span></div>
+    </div>
+<div class="card" data-cat="Seasonal">
+      <img src="images/all/thanksgiving-sheet-v1.jpg" alt="Thanksgiving Icons" loading="lazy" onclick="openLB('images/all/thanksgiving-sheet-v1.jpg','Thanksgiving Icons')">
+      <div class="card-body"><h3>Thanksgiving Icons</h3><span class="tag">Seasonal</span></div>
+    </div>
+<div class="card" data-cat="Seasonal">
+      <img src="images/all/newyear-sheet-v1.jpg" alt="New Year Icons" loading="lazy" onclick="openLB('images/all/newyear-sheet-v1.jpg','New Year Icons')">
+      <div class="card-body"><h3>New Year Icons</h3><span class="tag">Seasonal</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/floral-border-v1.jpg" alt="Floral Border" loading="lazy" onclick="openLB('images/all/floral-border-v1.jpg','Floral Border')">
+      <div class="card-body"><h3>Floral Border</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/floral-bouquet-v1.jpg" alt="Floral Bouquet" loading="lazy" onclick="openLB('images/all/floral-bouquet-v1.jpg','Floral Bouquet')">
+      <div class="card-body"><h3>Floral Bouquet</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/floral-wreath-v1.jpg" alt="Floral Wreath" loading="lazy" onclick="openLB('images/all/floral-wreath-v1.jpg','Floral Wreath')">
+      <div class="card-body"><h3>Floral Wreath</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/floral-shapla-v1.jpg" alt="Shapla Floral Art" loading="lazy" onclick="openLB('images/all/floral-shapla-v1.jpg','Shapla Floral Art')">
+      <div class="card-body"><h3>Shapla Floral Art</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/frame-duo-v1.jpg" alt="Duo Frame" loading="lazy" onclick="openLB('images/all/frame-duo-v1.jpg','Duo Frame')">
+      <div class="card-body"><h3>Duo Frame</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/frame-filmstrip-v1.jpg" alt="Filmstrip Frame" loading="lazy" onclick="openLB('images/all/frame-filmstrip-v1.jpg','Filmstrip Frame')">
+      <div class="card-body"><h3>Filmstrip Frame</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/frame-tornpaper-v1.jpg" alt="Torn Paper Frame" loading="lazy" onclick="openLB('images/all/frame-tornpaper-v1.jpg','Torn Paper Frame')">
+      <div class="card-body"><h3>Torn Paper Frame</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/frame-washitape-v1.jpg" alt="Washi Tape Frame" loading="lazy" onclick="openLB('images/all/frame-washitape-v1.jpg','Washi Tape Frame')">
+      <div class="card-body"><h3>Washi Tape Frame</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/vignette-moonlight-v1.jpg" alt="Moonlight Vignette" loading="lazy" onclick="openLB('images/all/vignette-moonlight-v1.jpg','Moonlight Vignette')">
+      <div class="card-body"><h3>Moonlight Vignette</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/vignette-pastel-v1.jpg" alt="Pastel Vignette" loading="lazy" onclick="openLB('images/all/vignette-pastel-v1.jpg','Pastel Vignette')">
+      <div class="card-body"><h3>Pastel Vignette</h3><span class="tag">Illustrations</span></div>
+    </div>
+<div class="card" data-cat="Illustrations">
+      <img src="images/all/vignette-sunset-v1.jpg" alt="Sunset Vignette" loading="lazy" onclick="openLB('images/all/vignette-sunset-v1.jpg','Sunset Vignette')">
+      <div class="card-body"><h3>Sunset Vignette</h3><span class="tag">Illustrations</span></div>
+    </div>
+</div>
+<div id="lb" onclick="this.classList.remove('show')"><span>&times;</span><img id="lbimg"><p id="lbcap"></p></div>
+<footer>
+  <p>All artworks are AI-generated vector illustrations, finished as clean EPS vectors.</p>
+  <p style="margin-top:8px">Licensing on <a href="https://stock.adobe.com/contributor/213633299/Mahmudul%20Hasan" target="_blank" rel="noopener">Adobe Stock</a> · © 2026 Mahmudul Hasan</p>
+</footer>
+<script>
+function filterCat(c,btn){document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.card').forEach(k=>{k.classList.toggle('hidden',c!=='all'&&k.dataset.cat!==c)});window.scrollTo({top:document.querySelector('.filters').offsetTop+40,behavior:'smooth'})}
+function openLB(src,cap){document.getElementById('lbimg').src=src;document.getElementById('lbcap').textContent=cap;document.getElementById('lb').classList.add('show')}
+</script>
+</body>
+</html>
